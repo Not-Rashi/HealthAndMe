@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="General">
+        <CheckBoxPreference
+            android:key = "send_notifications"
+            android:defaultValue="false"
+            android:title="Send Notifications"
+            android:summary="Send notifications from this app" />
+<!--        <SwitchPreference-->
+<!--        android:key="track_steps"-->
+<!--        android:defaultValue="false"-->
+<!--        android:switchTextOn="Yes"-->
+<!--        android:switchTextOff="No"-->
+<!--        android:title="Step Counter"-->
+<!--        android:summary="Keep track of your steps"/>-->
+        <EditTextPreference
+            android:key="set_goal"
+            android:defaultValue="1000"
+            android:title="Set daily goal"
+            android:summary="Set your daily step count goal"/>
+    </PreferenceCategory>
+</PreferenceScreen>
